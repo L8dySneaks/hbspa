@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+
+.height-400 {
+  background-color: navy;
+  height: 300px;
+}
+h1, h2 {
+  color: #fff;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .coming-soon {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .negative-margin-top {
+    margin-top: -150px;
+  }
+  
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .coming-soon {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .negative-margin-top {
+    margin-top: -185px;
+  }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .coming-soon {
+    font-size: 30px;
+    margin: 40px 0 10px 0;
+  }
+  .negative-margin-top {
+    margin-top: -185px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .coming-soon {
+    font-size: 25px;
+    margin: 40px 0 10px 0;
+  }
+  .negative-margin-top {
+    margin-top: -185px;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .coming-soon {
+    font-size: 20px;
+    margin: 45px 0 10px 0;
+  }
+  .negative-margin-top {
+    margin-top: -230px;
+  }
+}
