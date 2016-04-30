@@ -386,6 +386,7 @@
     "type.less",
     "code.less",
     "grid.less",
+    "tables.less",
     "forms.less",
     "buttons.less",
     "responsive-utilities.less",
@@ -394,10 +395,19 @@
     "input-groups.less",
     "navs.less",
     "navbar.less",
+    "breadcrumbs.less",
+    "pagination.less",
+    "pager.less",
+    "labels.less",
+    "badges.less",
     "jumbotron.less",
     "thumbnails.less",
     "alerts.less",
+    "progress-bars.less",
     "media.less",
+    "list-group.less",
+    "panels.less",
+    "responsive-embed.less",
     "wells.less",
     "close.less",
     "component-animations.less",
@@ -421,5 +431,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=e3fb1080ba645432a1b39c9d6e9e7af3"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=0a8e9eaaa3b1791690c616f6e588db62"
 }
