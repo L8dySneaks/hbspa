@@ -1,83 +1,124 @@
 html, body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 16px;
   height: 100%;
 }
 
-.height-300 {
-  background-color: #375172;
-  height: 200px;
-}
 
-.height-200 {
-  background-color: #fff;
-  height: 110px;
-}
 h1, h2 {
   color: #99badd;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: 600;
 }
 
-.margin-top {
-  margin-top: 20px;
+/***   Topline - Phone Number and Contact button  ***/
+.topline {
+  background-color: #375172;
+  color: #fff;
+  font-size: 11px;
+  height: 40px;
 }
-img {
+.intro-phone-number {
+  margin-left: -55px;
+  margin-top: 12px;
+}
+.glyphicon-earphone {
+  padding: 0 5px 0 0;
+}
+
+.intro-contact-btn {
+  margin-top: 3px;
+  margin-right: 30px;
+}
+/***   Header Styles  ***/
+.navbar-header {
+  height: 65px;
+}
+.navbar-default, .navbar-default .navbar-collapse {
+  border: none;
+}
+
+.navbar-default .navbar-text {
+  font: 14px "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #375172;
+  margin-top: 35px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+}
+
+.navbar-nav>li>a {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.brand-img {
   width: 100%;
   height: auto;
-  max-width: 370px;
-  min-width: 210px;
+  max-width: 150px;
+  margin-top: -15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  background-color: #375172;
+  color: #fff;
+}
+
+.navbar-toggle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background-color: #375172;
+  color: #fff;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+  background-color: #375172;
+  color: #fff;
 }
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-  .coming-soon {
-    font-size: 50px;
-    margin-bottom: 10px;
-  }
-  .negative-margin-top {
-    margin-top: -150px;
+  .intro-contact-btn {
+    margin-right: 30px;
   }
   
 }
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .coming-soon {
-    font-size: 50px;
-    margin: 0 0 10px 0;
-  }
-  .negative-margin-top {
-    margin-top: -185px;
+  .intro-contact-btn {
+    margin-right: 30px;
   }
 
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  .coming-soon {
-    font-size: 30px;
-    margin: 10px 0 10px 0;
+  .navbar-default .navbar-text {
+    color: #375172;
+    font: 12px "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 35px;
+    margin-left: -20px;
+    margin-bottom: 20px;
   }
-  .negative-margin-top {
-    margin-top: -185px;
-  }
+
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  .coming-soon {
-    font-size: 25px;
-    margin: 40px 0 10px 0;
+  .navbar-default .navbar-text {
+    color: #375172;
+    font: 12px "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
   }
-  .negative-margin-top {
-    margin-top: -185px;
+  .intro-contact-btn {
+    margin-right: -50px;
   }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-  .coming-soon {
-    font-size: 20px;
-    margin: 5px 0 10px 0;
-  }
-  .negative-margin-top {
-    margin-top: -230px;
+  .intro-contact-btn {
+    margin-right: -30px;
   }
 }
