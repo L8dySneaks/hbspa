@@ -21,7 +21,8 @@ h1, h2 {
   margin-left: -55px;
   margin-top: 12px;
 }
-.glyphicon-earphone {
+
+.intro-phone-number .glyphicon-earphone {
   padding: 0 5px 0 0;
 }
 
@@ -77,6 +78,38 @@ h1, h2 {
   background-color: #375172;
   color: #fff;
 }
+
+
+/***   Contact Styles  ***/
+.contact .section-heading {
+  text-transform: uppercase;
+}
+/*.contact-icons {
+  padding: 5px 0 5px 0;
+}
+
+.contact-content {
+  margin-left: -15px;
+  line-height: 15px;
+}
+
+.contact-content .contact-address {
+  margin-bottom: 16px;
+}
+
+.contact-content .contact-phone {
+  margin-bottom: 20px;
+}
+
+.contact-content .contact-fax {
+  margin-bottom: 28px;
+}
+
+.submit-btn {
+  float: right;
+}*/
+
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .intro-contact-btn {
