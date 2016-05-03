@@ -77,6 +77,30 @@ h1, h2 {
   background-color: #375172;
   color: #fff;
 }
+
+
+/***   Footer Styles  ***/
+footer {
+  background-color: #375172;
+  color: #fff;
+  font-size: 11px;
+  height: 40px;
+  margin-top: 50px;
+}
+
+.copyright {
+  margin: 5px 0 -1px 0;
+}
+
+.copyright a {
+  color: #99badd;
+}
+.copyright a:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
   .intro-contact-btn {
