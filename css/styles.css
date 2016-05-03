@@ -21,7 +21,8 @@ h1, h2 {
   margin-left: -55px;
   margin-top: 12px;
 }
-.glyphicon-earphone {
+
+.intro-phone-number .glyphicon-earphone {
   padding: 0 5px 0 0;
 }
 
@@ -79,26 +80,57 @@ h1, h2 {
 }
 
 
-/***   Footer Styles  ***/
-footer {
+/***   Contact Styles  ***/
+.contact {
+  background: #cbd7e6;
+  background: -moz-radial-gradient(center, ellipse cover,  #cbd7e6 0%, #cbd7e6 89%, #537bac 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cbd7e6), color-stop(89%,#cbd7e6), color-stop(100%,#537bac));
+  background: -webkit-radial-gradient(center, ellipse cover,  #cbd7e6 0%,#cbd7e6 89%,#537bac 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #cbd7e6 0%,#cbd7e6 89%,#537bac 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #cbd7e6 0%,#cbd7e6 89%,#537bac 100%);
+  background: radial-gradient(ellipse at center,  #cbd7e6 0%,#cbd7e6 89%,#537bac 100%);
+  background-size: 10px 10px;
+}
+.contact .container {
+  width: inherit;
+  height: inherit;
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.55)), color-stop(100%,rgba(255,255,255,0)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.55) 0%,rgba(255,255,255,0) 100%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.55) 0%,rgba(255,255,255,0) 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.55) 0%,rgba(255,255,255,0) 100%);
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,0.55) 0%,rgba(255,255,255,0) 100%);
+}
+
+.contact .section-heading {
+  color: #375172;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.contact .section-subheading {
+  margin-bottom: 30px;
+}
+.contact-block-heading {
+  color: #375172;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.contact-info .leftblock {
+  float: left;
+  width: 15%;
+  text-align: center;
+}
+.contact-info .leftblock .badge {
   background-color: #375172;
   color: #fff;
-  font-size: 11px;
-  height: 40px;
-  margin-top: 50px;
 }
-
-.copyright {
-  margin: 5px 0 -1px 0;
-}
-
-.copyright a {
-  color: #99badd;
-}
-.copyright a:hover {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
+.contact-info .rightblock {
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  float: left;
+  width: 85%;
+  margin-bottom: 10px;
 }
 
 /* Large desktops and laptops */

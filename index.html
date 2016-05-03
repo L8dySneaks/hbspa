@@ -35,8 +35,9 @@
 
   <body>
 
-
+    
       <div class="topline">
+        <div class="container">
           <div class="row">
             <section class="col-sm-1 col-xs-1"></section>
             <section class="col-sm-offset-1 col-sm-4 col-xs-offset-1 col-xs-4">
@@ -46,12 +47,13 @@
             </section>
             <section class="col-sm-offset-1 col-sm-4 col-xs-offset-1 col-xs-4">
               <div class="intro-contact-btn text-right">
-                <a class="btn btn-default" href="#footerform" role="button">Contact</a>
+                <a class="btn btn-default" href="#contact" role="button">Contact</a>
               </div>
             </section>
             <section class="col-sm-1 col-xs-1"></section>
           </div>
         </div> 
+      </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default">
@@ -108,42 +110,47 @@
         <!-- /.container-fluid -->
     </nav>
 
-<div class="content container">
-    <div class="row">
-        <section class="col-xs-12">
-          <div class="jumbotron">
-            <p>Health Benefit Services is an indepenct agency specializing in group, individual and senior health including medicine and retirement strategies.</p>
-            <h3>Our commitment to you:</h3>
-            <p>
-              <ul>
-                <li>
-                  <b>Service:</b> We will assist you and your employees in resolving claims problems and handle other benefits questions and issues.  We will provide you with our toll-free number, your Account Manager’s business card for each of your employees, and bulletin board posters to create awareness of our service availability.
-                </li>
-                <li>
-                  <b>Market Knowledge:</b> We will keep you current on new ideas and concepts in the benefits arena, to help you control costs while retaining valued employees.  We will evaluate all viable carriers when seeking quotes for your coverage.
-                </li>
-                <li>
-                  <b>Compliance Expertise:</b> We will advise you on insurance compliance issues such as COBRA, HIPAA, coverage mandates, etc.
-                </li>
-              </ul>
-            </p>
-          </div>
 
-        </section>
-    </div><!-- row -->
-</div><!-- content container -->
+<!-- Main Intro Section -->
+    <section id="main-intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="jumbotron">
+                    <p>Health Benefit Services is an indepenct agency specializing in group, individual and senior health including medicine and retirement strategies.</p>
+                    <h3>Our commitment to you:</h3>
+                    <p>
+                      <ul>
+                        <li>
+                          <b>Service:</b> We will assist you and your employees in resolving claims problems and handle other benefits questions and issues.  We will provide you with our toll-free number, your Account Manager’s business card for each of your employees, and bulletin board posters to create awareness of our service availability.
+                        </li>
+                        <li>
+                          <b>Market Knowledge:</b> We will keep you current on new ideas and concepts in the benefits arena, to help you control costs while retaining valued employees.  We will evaluate all viable carriers when seeking quotes for your coverage.
+                        </li>
+                        <li>
+                          <b>Compliance Expertise:</b> We will advise you on insurance compliance issues such as COBRA, HIPAA, coverage mandates, etc.
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
 
-<!-- Contact Section -->
-    <section id="contact">
+                </div>
+            </div><!-- row -->
+        </div><!-- content container -->
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Submit A Quote</h2>
+                    <h2 class="section-heading">Contact</h2>
+                    <!-- <h3 class="section-subheading text-muted">Please fill out the form below to submit a quote.</h3> -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                <div class="col-md-6">
+                    <form method="post" action="php/contact_me.php" role="form" name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -151,48 +158,95 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                  <input type="text" class="form-control" placeholder="Your Company *" id="company" required data-validation-required-message="Please enter your company.">
+                                    <p class="help-block text-danger"></p>  
+                                </div>
+                                <!-- <p> Type : </p>
+                                <div class="radio">
+                                  <label>
+                                    <input name="insurancetype" type="radio" value="group"> Group
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input name="insurancetype" type="radio" value="individual"> Individual
+                                  </label>
+                                </div> -->
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                  <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
+                                    <!-- <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p> -->
                                 </div>
                                 <div class="form-group">
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl" style="margin-bottom:30px;">Submit</button>
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                  <div class="contact-block clearfix">
+                    <div class="leftblock"><span class="badge"><span class="glyphicon glyphicon-map-marker"></span></span></div>
+                    <div class="rightblock">
+                      <h4 class="contact-block-heading">Office Address</h4>
+                      <p class="contact-block-paragraph">993 Brodhead Rd., Suite 201 <br/>
+                        Coraopolis, PA 15108 </p>
+                    </div>
+                  </div>
+
+                  <div class="contact-block clearfix">
+                    <div class="leftblock"><span class="badge"><span class="glyphicon glyphicon-earphone"></span></span></span></div>
+                    <div class="rightblock">
+                      <h4 class="contact-block-heading">Phone</h4>
+                      <p class="contact-block-paragraph">Toll Free : 1-800-347-8984 <br/>
+                        Local : (412)865-3200 </p>
+                    </div>
+                  </div>
+
+                  <div class="contact-block clearfix">
+                    <div class="leftblock"><span class="badge"><span class="glyphicon glyphicon-print"></span></span></span></span></div>
+                    <div class="rightblock">
+                      <h4 class="contact-block-heading">Fax</h4>
+                      <p class="contact-block-paragraph">(412)865-3202</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-block clearfix">
+                    <div class="leftblock"><span class="badge"><span class="glyphicon glyphicon-time"></span></span></span></span></div>
+                    <div class="rightblock bottom-border-none">
+                      <h4 class="contact-block-heading">Hours</h4>
+                      <p class="contact-block-paragraph">M - F | 9 am - 5 pm</p>
+                    </div>
+                  </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <p class="copyright">Copyright &copy; <a href="http://www.hbspa.com">HSBPA.COM</a> 2016</p>
-          <p class="developedby">Developed by Stephanie Symosko</p>
-        </div>
-      </div>
+    <footer id="footer">
 
     </footer>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- <script src="../js/script.js"></script> -->
   </body>
