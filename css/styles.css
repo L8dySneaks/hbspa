@@ -1,9 +1,15 @@
 html, body {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-size: 16px;
-  height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
+body {
+  overflow-x: hidden; 
+  margin: 0px;
+  padding-bottom: 200px;
+}
 
 h1, h2 {
   color: #99badd;
@@ -34,6 +40,10 @@ h1, h2 {
 .navbar-header {
   height: 65px;
 }
+.navbar {
+  margin-bottom: 5px;
+}
+
 .navbar-default, .navbar-default .navbar-collapse {
   border: none;
 }
@@ -49,7 +59,7 @@ h1, h2 {
 .navbar-nav>li>a {
   font-size: 14px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .brand-img {
@@ -77,6 +87,50 @@ h1, h2 {
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
   background-color: #375172;
   color: #fff;
+}
+
+
+/***   Main Content Styles  ***/
+.banner-img {
+  background: url(../images/home-banner.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  height: 300px;
+}
+
+.page-title {
+  background: url("../images/texture_bg.jpg") repeat-x;
+  opacity: .9;
+  height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  margin-top: 30px;
+}
+
+.img-responsive {
+  max-width: 70%;
+  min-width: 200px;
+}
+
+.staff-title {
+  font-weight: bold;
+}
+
+.staff-info {
+  max-width: 95%;
+  min-width: 200px;
+}
+
+.staff-row {
+  margin-top: 50px;
+}
+
+.senior-underline {
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 
@@ -135,16 +189,45 @@ h1, h2 {
 
 
 /***   Footer Styles  ***/
+
+
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
   background-color: #375172;
   color: #fff;
   font-size: 11px;
-  height: 40px;
   margin-top: 50px;
+  padding: -10px 0 10px 0;
 }
- 
+
+.bbb-wrap {
+  margin-top: 30px;
+}
+
+.bbb-info {
+  margin-bottom: 10px;
+}
+.bbb-link,
+.bbb-link:focus {
+  color: #99badd;
+}
+
+.bbb-link:hover {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bbb-seal {
+  margin: 0 auto;
+}
+
 .copyright {
-  margin: 5px 0 -1px 0;
+  margin: 15px 0 -1px 0;
 }
  
 .copyright a {
@@ -155,6 +238,7 @@ footer {
   cursor: pointer;
   text-decoration: none;
 }
+
 
 
 /* Large desktops and laptops */
@@ -194,11 +278,23 @@ footer {
   .intro-contact-btn {
     margin-right: -50px;
   }
+  .staff-row {
+    margin-top: 0px;
+  }
+  .staff-block {
+    padding-bottom: 30px;
+  }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .intro-contact-btn {
     margin-right: -30px;
+  }
+  .staff-row {
+    margin-top: 0px;
+  }
+  .staff-block {
+    padding-bottom: 30px;
   }
 }

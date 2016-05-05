@@ -13,7 +13,7 @@ $(function() {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             // var insurancetype = $("input#insurancetype").val();
-            // var message = $("textarea#message").val();
+            var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -28,7 +28,7 @@ $(function() {
                     phone: phone,
                     email: email,
                     // insurancetype: insurancetype
-                    // message: message
+                    message: message
                 },
                 cache: false,
                 success: function() {
@@ -54,7 +54,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            });
         },
         filter: function() {
             return $(this).is(":visible");
