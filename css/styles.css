@@ -120,6 +120,7 @@ h1, h2 {
 }
 
 .staff-info {
+  font-size: 14px;
   max-width: 95%;
   min-width: 200px;
 }
@@ -217,9 +218,9 @@ footer {
 }
 
 .bbb-link:hover {
-  color: #fff;
+  color: #333;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .bbb-seal {
@@ -238,7 +239,6 @@ footer {
   cursor: pointer;
   text-decoration: none;
 }
-
 
 
 /* Large desktops and laptops */
@@ -284,6 +284,9 @@ footer {
   .staff-block {
     padding-bottom: 30px;
   }
+  .page-title {
+    margin-bottom: 20px;
+  }
 }
 
 /* Portrait phones and smaller */
@@ -297,4 +300,28 @@ footer {
   .staff-block {
     padding-bottom: 30px;
   }
+  .page-title {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Coming Soon Styles */
+.height-300 {
+  background-color: #375172;
+  height: 200px;
+}
+.height-200 {
+  background-color: #fff;
+  height: 110px;
+}
+.coming-soon-title {
+  color: #99badd;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+.coming-soon-img {
+  width: 100%;
+  height: auto;
+  max-width: 370px;
+  min-width: 210px;
 }
